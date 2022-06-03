@@ -1,0 +1,18 @@
+tables:
+-
+ table: table1
+ dag_id: dag1
+ start_date: "2022-06-02"
+ schedule_interval : "@once"
+ partition_start_date: "2022-06-31"
+ no_of_partitions: 5
+ partitions: ["20220501","20220502","20220503"]
+
+-
+ table: table2
+ dag_id: dag2
+ start_date: "2022-06-02"
+ schedule_interval : "@once"
+ partition_start_date: "2022-06-31"
+ no_of_partitions: 5
+ partitions: ["20220501","20220502","20220503"]
